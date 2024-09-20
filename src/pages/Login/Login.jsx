@@ -20,7 +20,7 @@ const Login = () => {
       return;
     }
     if(!user){
-      setError("Please enter the password");
+      setError("Please enter the user");
       return;
     }
 
