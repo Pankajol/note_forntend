@@ -139,7 +139,7 @@ function Root() {
                   content. Perfect for creators, students, and professionals
                   alike!
                 </p>
-                <Link href="/dashbord" className="text-blue-400">
+                <Link to="/allnotes" className="text-blue-400">
                   See Here
                 </Link>
               </div>

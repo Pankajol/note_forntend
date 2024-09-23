@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import SignUp from './pages/SignUp/SignUp'
 import Root from './pages/Root/Root';
+import Notes from './pages/Notes/Notes';
 
 const routes = (
   <Router>
@@ -12,6 +13,7 @@ const routes = (
       <Route path="/dashboard" exact element={<Home />} />
       <Route path="/login" exact element={<Login />} />
       <Route path="/signup" exact element={<SignUp />} />
+      <Route path="/allnotes" exact element={<Notes/>} />
     </Routes>
   </Router>
 );
