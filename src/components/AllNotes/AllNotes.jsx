@@ -31,10 +31,12 @@ const AllNotes = () => {
   }
 
   return (
-    <div>
+    <div className='bg-slate-400'>
       {notes.map((note) => (
-        <div key={note._id}>
-          <h3>{note.title}</h3>
+        <div  key={note._id}>
+          <h3 >{note.title}</h3>
+          <img src={note.imgurl} alt="img" />
+          <h3 className='text-blue-600'>{note.title}</h3>
           <p>{note.content}</p>
           <span>Tags: {note.tags.join(', ')}</span>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Contact from "../../components/Contact/Contact";
 
 function Root() {
   return (
@@ -173,6 +174,54 @@ function Root() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* contact us */}
+        <section>
+          {/* <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 px-4">
+            <h1 className="text-3xl font-semibold mb-6 text-center">
+              Contact Us
+            </h1>
+
+            <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8">
+              <form className="grid grid-cols-1 md:grid-cols-2 gap-6 "action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="575e69b9-8e78-42b4-84ed-3278f8348c51" />
+                <div className="flex flex-col">
+                  <label className="text-lg font-medium">Full Name</label>
+                  <input
+                    type="text"
+                    className="mt-2 p-3 border border-gray-300 rounded-md"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <label className="text-lg font-medium">Email Address</label>
+                  <input
+                    type="email"
+                    className="mt-2 p-3 border border-gray-300 rounded-md"
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <div className="flex flex-col md:col-span-2">
+                  <label className="text-lg font-medium">Message</label>
+                  <textarea
+                    className="mt-2 p-3 border border-gray-300 rounded-md"
+                    rows="5"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+
+                <div className="md:col-span-2 flex justify-center">
+                  <button className="bg-blue-500 text-white py-3 px-8 rounded-md hover:bg-blue-600">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div> */}
+          <Contact />
         </section>
       </main>
       {/* Footer */}

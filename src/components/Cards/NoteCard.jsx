@@ -8,13 +8,14 @@ const NoteCard = ({
   date,
   content,
   tags,
+  image,
   isPinned,
   onEdit,
   onDelete,
   onPinNote,
 }) => {
   return (
-    <div className="border rounded p-6 bg-white hover:shadow-xl transition-all ease-in-out">
+    <div className="border rounded p-6  hover:shadow-xl transition-all ease-in-out">
         <div className="flex items-center justify-between">
       <div>
         <h6 className="text-sm font-medium">{title}</h6>
@@ -23,11 +24,15 @@ const NoteCard = ({
       <MdOutlinePushPin className={`icon-btn ${isPinned ? 'text-primary' : 'text-slate-300'}`} onClick={onPinNote} />
     </div>
     <p className="text-xs text-slate-600 mt-2">{content?.slice(0)}</p>
+      <div className="flex items-center justify-between mt-2">
+        <img className="w-36 h-24 rounded-xl " src={image} alt="img" />
+      </div>
     <div className=" flex items-center justify-between mt-2">
       <div className="text-xs text-slate-500">
 
       {tags.map((item) => `# ${item}`)}
       </div>
+     
       <div className="flex items-center gap-2">
         <MdCreate
         className="icon-btn hover:text-green-600"

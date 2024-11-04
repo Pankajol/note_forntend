@@ -359,6 +359,7 @@ const Home = () => {
                 date={item.createdOn}
                 content={item.content}
                 tags={item.tags}
+                image={item.imgurl}
                 isPinned={item.isPinned}
                 onEdit={() => handleEdit(item)}
                 onDelete={() => deleteNote(item)}
